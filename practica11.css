@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif; /* Define el tipo de fuente para todo el cuerpo del documento */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado */
+    background-color: gray; /* Establece el color de fondo del cuerpo del documento */
+}
+
+.container {
+    display: flex; /* Utiliza el modelo de caja flexible para el contenedor principal */
+    flex-direction: column; /* Establece la dirección principal de los elementos secundarios en columnas */
+    align-items: center; /* Centra los elementos secundarios horizontalmente */
+    padding: 20px; /* Añade relleno alrededor del contenedor principal */
+}
+
+form {
+    background-color: wheat; /* Establece el color de fondo del formulario */
+    padding: 20px; /* Añade relleno dentro del formulario */
+    border-radius: 8px; /* Redondea las esquinas del formulario */
+    box-shadow: 0 0 10px rgba(0, 0, 0,10); /* Agrega una sombra alrededor del formulario */
+    width: 100%; /* Establece el ancho del formulario al 100% del contenedor principal */
+    max-width: 400px; /* Establece el ancho máximo del formulario */
+    transform: translate(150%, 60%); /* Translada el formulario 150% hacia la derecha y 60% hacia abajo */
+}
+
+/* Estilos para los grupos de formulario */
+.form-group {
+    margin-bottom: 20px; /* Agrega espacio inferior entre grupos de formulario */
+}
+
+label {
+    font-weight: bold; /* Hace que las etiquetas del formulario sean negritas */
+}
+
+/* Estilos para los campos de entrada, selección y botón */
+input,
+select,
+button {
+    width: 100%; /* Establece el ancho al 100% del contenedor */
+    padding: 10px; /* Añade relleno dentro de los campos */
+    border: 1px solid wheat; /* Establece el borde de los campos */
+    border-radius: 10px; /* Redondea las esquinas de los campos */
+    box-sizing: border-box; /* Hace que el tamaño del borde se incluya en el ancho y alto total */
+    font-size: 16px; /* Establece el tamaño de fuente */
+    margin-top: 5px; /* Agrega espacio superior entre campos */
+}
+
+button {
+    background-color: red; /* Establece el color de fondo del botón */
+    color: #fff; /* Establece el color del texto del botón */
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar el ratón sobre el botón */
+}
+
+.event-details {
+    background-color: white; /* Establece el color de fondo de los detalles del evento */
+    padding: 20px; /* Añade relleno dentro de los detalles del evento */
+    border-radius: 8px; /* Redondea las esquinas de los detalles del evento */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10); /* Agrega una sombra a los detalles del evento */
+    margin-top: 20px; /* Agrega espacio superior entre los detalles del evento y el formulario */
+    transform: translate(0%, -50%); /* Translada los detalles del evento 0% hacia la izquierda y 50% hacia arriba */
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        flex-direction: row; /* Cambia la dirección principal de los elementos secundarios a filas */
+        justify-content: space-between; /* Distribuye los elementos secundarios uniformemente a lo largo del eje principal */
+    }
+
+    form {
+        width: calc(50% - 10px); /* Establece el ancho del formulario al 50% menos 10px */
+    }
+
+    .event-details {
+        width: calc(50% - 10px); /* Establece el ancho de los detalles del evento al 50% menos 10px */
+    }
+}
+
+/* Estilos para los detalles de registro */
+.detalles {
+    background-color: white; /* Establece el color de fondo de los detalles de registro */
+    color: black; /* Establece el color del texto de los detalles de registro */
+    transform: translate(-20%, 200%); /* Translada los detalles de registro -20% hacia la izquierda y 200% hacia abajo */
+    width: 30%; /* Establece el ancho de los detalles de registro */
+    padding: 10px; /* Añade relleno dentro de los detalles de registro */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10); /* Agrega una sombra a los detalles de registro */
+    border-radius: 8px; /* Redondea las esquinas de los detalles de registro */
+}
