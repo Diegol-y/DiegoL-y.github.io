@@ -1,0 +1,194 @@
+/* Definición de variables */
+:root {
+    --verde: #7ff1a5;
+    --purple: #7e38ee;
+    --blue-light: #03e7e7;
+    --blue-dark: #2a73c2;
+    --white: #fff;
+    --gris: #b792e7;
+    --verde2: #31d869;
+}
+
+/* Estilos generales del cuerpo del documento */
+body {
+    /* Fuente del texto */
+    font-family: Arial, sans-serif; 
+    /* Centrar el contenido horizontalmente */
+    margin: auto; 
+    /* Imagen de fondo */
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-garabato-abstracto-plano_23-2149315781.jpg); 
+    /* 100% del alto de la ventana */
+    height: 100vh; 
+    /* Ajustar la imagen para cubrir el área disponible */
+    background-size: cover;
+}
+
+
+/* Estilos del contenedor principal */
+.container {
+    /* Ancho máximo del contenedor */
+    max-width: 600px; 
+    /* Margen exterior y centrado horizontal */
+    margin: 50px auto; 
+    /* Espaciado interno */
+    padding: 20px; 
+    /* Bordes redondeados */
+    border-radius: 10px; 
+    /* Sombra */
+    box-shadow: 0 0 20px white; 
+    /* Fondo con degradado */
+    background: linear-gradient(to bottom, var(--gris), var(--white)); 
+}
+
+/* Estilos del encabezado */
+h1 {
+    /* Texto centrado */
+    text-align: center; 
+    /* Color del texto */
+    color: var(--purple); 
+    /* Fuente del texto */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+/* Estilos del campo de entrada de texto */
+input[type="text"] {
+    /* Ancho del campo de entrada */
+    width: calc(100% - 40px); 
+    /* Relleno interno */
+    padding: 10px; 
+    /* Margen inferior */
+    margin-bottom: 20px; 
+    /* Borde */
+    border: 2px solid mediumslateblue; 
+    /* Bordes redondeados */
+    border-radius: 5px; 
+}
+
+/* Estilos de los botones */
+button {
+    /* Relleno interno */
+    padding: 10px 20px; 
+    /* Margen derecho */
+    margin-right: 10px; 
+    /* Sin borde */
+    border: none; 
+    /* Bordes redondeados */
+    border-radius: 5px; 
+    /* Cambio de cursor al pasar */
+    cursor: pointer; 
+}
+
+/* Estilos de la lista de tareas */
+ul {
+    /* Sin viñetas */
+    list-style-type: none; 
+    /* Sin relleno */
+    padding: 0; 
+}
+
+/* Estilos de cada elemento de la lista de tareas */
+li {
+    /* Relleno interno */
+    padding: 10px; 
+    /* Margen inferior */
+    margin-bottom: 5px; 
+    /* Color de fondo */
+    background-color: #f9f9f9; 
+    /* Bordes redondeados */
+    border-radius: 5px; 
+    /* Transición suave de color de fondo */
+    transition: background-color 0.3s ease; 
+}
+
+/* Estilos de las tareas completadas */
+li.completed {
+    /* Sombra */
+    box-shadow: 0 0 5px black; 
+    /* Color de fondo */
+    background: #b0f6f2; 
+}
+
+/* Estilos del botón para completar una tarea */
+.complete-btn {
+    /* Color de fondo */
+    background-color: #1dd423; 
+    /* Color del texto */
+    color: black; 
+    /* Sombra */
+    box-shadow: 0 0 10px green; 
+    /* Margen izquierdo */
+    margin-left: 45%; 
+}
+
+/* Estilos del botón para borrar una tarea */
+.delete-btn {
+    /* Color de fondo */
+    background-color: #f44336; 
+    /* Color del texto */
+    color: black; 
+    /* Sombra */
+    box-shadow: 0 0 10px red; 
+}
+
+/* Estilos de los botones de filtro */
+.filters button {
+    /* Color de fondo */
+    background-color: #ccc; 
+    /* Color del texto */
+    color: black; 
+    /* Sombra */
+    box-shadow: 0 0 15px black; 
+}
+
+/* Estilos de los botones de filtro al pasar el cursor */
+.filters button:hover {
+    /* Color de fondo */
+    background-color: black; 
+}
+
+/* Estilos de las tareas completadas */
+.completed {
+     /* Color de fondo purpura cuando se completa */
+    background-color: #dcb8ff;
+    /* Nombre de la animación */
+    animation-name: completeAnimation; 
+    /* Duración de la animación */
+    animation-duration: 0.5s; 
+}
+
+/* Animación para las tareas completadas */
+@keyframes completeAnimation {
+    0% {
+        /* Escala inicial */
+        transform: scale(1); 
+    }
+    50% {
+        /* Escala intermedia */
+        transform: scale(1.2); 
+    }
+    100% {
+        /* Escala final */
+        transform: scale(1); 
+    }
+}
+
+/* Estilos específicos para cada botón de filtro */
+#allTasks {
+    /* Fondo morado */
+    background: #b792e7; 
+}
+
+#activeTasks {
+    /* Fondo verde */
+    background: #1dd423; 
+}
+
+#completedTasks {
+    /* Fondo rojo */
+    background: rgb(233, 64, 64); 
+}
+
+#clearCompleted {
+    /* Fondo morado */
+    background: #b792e7; 
+}
